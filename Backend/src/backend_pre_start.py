@@ -17,6 +17,7 @@ wait_seconds = 1
     before=before_log(logger, logging.INFO),
     after=after_log(logger, logging.WARN),
 )
+
 def init() -> None:
     try:
         db = SessionLocal()
